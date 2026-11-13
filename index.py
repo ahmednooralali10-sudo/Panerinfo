@@ -187,7 +187,7 @@ def generate_banner():
         return jsonify({"error": "Valid UID required (?paner=12345)"}), 400
 
     try:
-        acc = oauth("8001120768", "40c74921aaedcba4fac1")
+        acc = oauth("4555614870", "S7LHR6RDFK17-S1X_TEAM")
         if not acc: return jsonify({"error": "OAuth failed"}), 500
         
         res = major_login(acc["access_token"], acc["open_id"])
